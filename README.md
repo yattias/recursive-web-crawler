@@ -1,5 +1,6 @@
-Ruby Web Crawler => Generates sitemap
+
+Site map generating recursive crawler
 ========
 
-**Run by:** ``rake crawl[url,depth] #No space after comma!``
+**Run:** ``rake crawl[url,depth] #No space after comma!``
 
