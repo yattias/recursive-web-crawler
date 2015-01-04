@@ -1,0 +1,18 @@
+<ul>
+  <li>
+    <a href="<%=@url%>"><%=@url%></a>
+    
+    <br/><strong>Resources:</strong><br/>    
+    <ul>
+      <% @resources.each do |r| %>
+        <li><%=r%></li>
+      <% end %>
+    </ul>
+
+    <strong>Links:</strong><br/>
+    <% @children.each do |child| %>
+      <%= PageRenderHelper::render_tree(child, @tree_renderer) if !child.nil? %>
+    <% end %>
+
+  </li>
+</ul>
